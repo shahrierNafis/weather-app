@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Abel;
+    src: url(Abel-Regular.ttf);
+}
+
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header location search"
+        ". main ."
+        ". . .";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    grid-area: header;
+    font-size: 3rem;
+}
+
+h1 {
+    margin: 0%;
+    font-size: 3rem;
+}
+
+#location {
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: location;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#search {
+    grid-area: search;
+    display: flex;
+    height: 3rem;
+    justify-content: end;
+}
+
+#location-quarry {
+    width: 100%;
+}
+
+#location-quarry.error {
+    border: red solid 2px;
+    background-color: rgb(255, 180, 180);
+}
+
+#search-btn {
+    width: 40px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "top"
+        "bottom ";
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#top-info {
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temperature {
+    font-size: 8rem;
+    border: 1px solid white;
+
+
+}
+
+#condition-icon {
+    flex-grow: 0;
+    height: 9rem;
+    border: 1px solid white;
+}
+
+#bottom-info {
+    color: gray;
+    grid-area: bottom;
+    text-align: start;
+    font-size: 2rem;
+    margin: 0 auto;
+    font-family: Abel;
+
+}
