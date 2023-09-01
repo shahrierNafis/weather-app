@@ -10,7 +10,7 @@ async function fetchWeatherInfo(location) {
     console.log('apiKey:', apiKey);
 
     // Create the API URL with the location and API key
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
     console.log('apiUrl:', apiUrl);
 
     // Fetch the weather Info from the API
